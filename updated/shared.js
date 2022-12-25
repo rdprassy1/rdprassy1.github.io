@@ -1,10 +1,10 @@
-function calculateTaxM(val1, val2) {
+function calculateTaxM1(val1, val2) {
     let val = val1 + val2 + 100;    
     let data = {type: 'Response from External JS:', val};
     sendToMobile(data);
 }
 
-function calculateTotalM(val1, val2) {
+function calculateTotalM1(val1, val2) {
     let val = val1 + val2 + 200;
     let data = {type: 'Response from External JS:', val};
     sendToMobile(data);
