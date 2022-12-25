@@ -17,9 +17,9 @@ function sendToMobile(data) {
  // For Web
 
 window.calculateTax = (val1, val2) => {
-    return  val1 + val2 + 20;
+    return  val1 + val2 + 30;
 }
 
 window.calculateVals = (val1, val2) => {
-    return val1 + val2;
+    return val1 + val2+10;
 }
