@@ -10,6 +10,13 @@ function getToal(val1, val2) {
     sendToMobile(data);
 }
 
+function getBasicData(reqObj) {
+    console.log(reqObj);
+    let val = reqObj.region;
+    let data = {type: 'Response from External JS:', val};
+    sendToMobile(data);
+}
+
 function sendToMobile(data) {
   window.ReactNativeWebView.postMessage(JSON.stringify(data));
 }
