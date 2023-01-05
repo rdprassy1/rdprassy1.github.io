@@ -33,6 +33,6 @@ window.calculateVals = (val1, val2) => {
 
 
 window.getBasicData = (reqObj) => {
-    console.log(typeof(reqObj);
+    console.log(typeof(reqObj));
     return reqObj.num1;
 }
