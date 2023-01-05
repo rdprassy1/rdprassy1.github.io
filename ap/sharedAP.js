@@ -29,3 +29,8 @@ window.calculateTax = (val1, val2) => {
 window.calculateVals = (val1, val2) => {
     return val1 + val2;
 }
+
+
+window.getBasicData = (reqObj) => {
+    return reqObj.num1;
+}
