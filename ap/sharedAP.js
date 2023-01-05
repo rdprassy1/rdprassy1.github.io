@@ -5,14 +5,21 @@ function getTax(val1, val2) {
 }
 
 function getToal1(val1) {
-    let val = val1;
-      if (typeof val1 !== 'object') {
-          let tempObj = JSON.parse(val1);
-          let price = parseInt(tempObj.num1) * 100 + parseInt(tempObj.num2) * 200;
-          val = price ? price : 'error in external JS'      
-    }
-    let data = {type: 'Response from External JS:', val: price};
-    sendToMobile(data);
+  let val = val1;
+  let price = 0;
+  console.log(typeof val1);
+  if (typeof val1 !== 'object') {
+    val = JSON.parse(val1);
+  }
+  console.log(val);
+  price = parseInt(val.num1) * 100 + parseInt(val.num2) * 200;
+  val = price ? price : 'error in external JS'
+
+  let data = {
+    type: 'Response from External JS:',
+    val: price
+  };
+  console.log(data);
 }
 
 function getToal(val1, val2) {
