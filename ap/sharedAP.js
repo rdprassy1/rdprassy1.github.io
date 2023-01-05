@@ -6,7 +6,7 @@ function getTax(val1, val2) {
 
 function getToal1(val1, val2) {
     let val = val1 + val2;
-    let data = {type: 'Response from External JS:', val};
+    let data = {type: 'Response from External JS:', val: 300};
     sendToMobile(data);
 }
 
