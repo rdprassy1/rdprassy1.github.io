@@ -33,6 +33,9 @@ window.calculateVals = (val1, val2) => {
 
 
 window.getBasicData = (reqObj) => {
+    console.log(reqObj);
+    console.log(reqObj.num1);
+    console.log(reqObj.num2);
     console.log(typeof(reqObj));
     let reqObj1 = JSON.parse(reqObj);
     let val = reqObj.num1 + reqObj.num2;
