@@ -4,23 +4,23 @@ function getTax(val1, val2) {
     sendToMobile(data);
 }
 
-function getToal2(val1) {
-  let val = val1;
-  let price = 0;
-  if (typeof val !== 'object') {
-    val = JSON.parse(val1);
-  }
-  price = parseInt(val.num1) * 100 + parseInt(val.num2) * 200;
-  val = price ? price : 'error in external JS'
+// function getToal2(val1) {
+//   let val = val1;
+//   let price = 0;
+//   if (typeof val !== 'object') {
+//     val = JSON.parse(val1);
+//   }
+//   price = parseInt(val.num1) * 100 + parseInt(val.num2) * 200;
+//   val = price ? price : 'error in external JS'
 
-  let data = {
-    type: 'Response from External JS:',
-    val: price
-  };
-  sendToMobile(data);
-}
+//   let data = {
+//     type: 'Response from External JS:',
+//     val: price
+//   };
+//   sendToMobile(data);
+// }
 
-function getOToal1(reqObj) {
+function getToal1(reqObj) {
 
     let tempObj = reqObj;
 
