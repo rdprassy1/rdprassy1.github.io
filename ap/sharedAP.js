@@ -4,7 +4,7 @@ function getTax(val1, val2) {
     sendToMobile(data);
 }
 
-function getToal1(val1) {
+function getToal2(val1) {
   let val = val1;
   let price = 0;
   if (typeof val !== 'object') {
@@ -18,6 +18,26 @@ function getToal1(val1) {
     val: price
   };
   sendToMobile(data);
+}
+
+function getOToal1(reqObj) {
+
+    let tempObj = reqObj;
+
+    if (typeof tempObj !== 'object') {
+
+        tempObj = JSON.parse(reqObj)
+
+    }
+
+    let val = Number(tempObj.num1) + Number(tempObj.num2) + 50;
+
+    val = val ? val : 'error in external JS';
+
+    let data = {type: 'Response from External JS:', val};
+
+    sendToMobile(data);
+
 }
 
 function getToal(val1, val2) {
