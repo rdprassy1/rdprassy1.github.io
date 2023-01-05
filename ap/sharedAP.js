@@ -10,6 +10,12 @@ function getToal(val1, val2) {
     sendToMobile(data);
 }
 
+function getToal(val1, val2) {
+    let val = val1 + val2;
+    let data = {type: 'Response from External JS:', val};
+    sendToMobile(data);
+}
+
 function getBasicData(val1) {
     let data = {type: 'Response from External JS:', val: 25};
     sendToMobile(data);
