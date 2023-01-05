@@ -20,6 +20,8 @@ function getToal1(val1) {
     val: price
   };
   console.log(data);
+  sendToMobile(data);
+
 }
 
 function getToal(val1, val2) {
