@@ -7,7 +7,7 @@ function getTax(val1, val2) {
 function getToal1(val1) {
     let val = val1;
       if (typeof val1 !== 'object') {
-          tempObj = JSON.parse(val1);
+          let tempObj = JSON.parse(val1);
           let price = parseInt(tempObj.num1) * 100 + parseInt(tempObj.num2) * 200;
           val = price ? price : 'error in external JS'      
     }
