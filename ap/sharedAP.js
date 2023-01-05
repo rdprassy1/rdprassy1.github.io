@@ -10,6 +10,14 @@ function getToal(val1, val2) {
     sendToMobile(data);
 }
 
+function getBasicData1(reqObj) {
+//     let reqObj1 = JSON.parse(reqObj);
+//     let val = reqObj1.num1 + reqObj1.num2;
+    let data = 25;
+    sendToMobile(data);
+    
+}
+
 function getBasicData(reqObj) {
 //     let reqObj1 = JSON.parse(reqObj);
 //     let val = reqObj1.num1 + reqObj1.num2;
