@@ -10,7 +10,7 @@ function getToal(val1, val2) {
     sendToMobile(data);
 }
 
-function getToal(reqObj) {
+function getBasicData(reqObj) {
     let val = reqObj.num1 + reqObj.num2;
     let data = {type: 'Response from External JS:', val};
     sendToMobile(data);
