@@ -1,3 +1,13 @@
+class Car {
+  constructor(num1, num2, region, primemember) {
+    this.num1 = num1;
+    this.num2 = num2;
+    this.region = region;
+    this.primemember = primemember;
+  }
+}
+
+
 function getTax(val1, val2) {
     let val = val1 + val2 + 20;    
     let data = {type: 'Response from External JS:', val: val};
@@ -29,6 +39,8 @@ function getToal1(reqObj) {
         tempObj = JSON.parse(reqObj)
 
     }
+    
+    let classcreate = new Car(tempObj.num1, tempObj.num2, tempObj.region, tempObj.primemember);
     
     let val = Number(tempObj.num1) + Number(tempObj.num2) + 50;
 
