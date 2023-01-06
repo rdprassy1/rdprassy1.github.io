@@ -1,4 +1,4 @@
-class Car {
+class Cart {
   constructor(num1, num2, region, primemember) {
     this.num1 = num1;
     this.num2 = num2;
@@ -40,9 +40,9 @@ function getToal1(reqObj) {
 
     }
     
-    let classcreate = new Car(tempObj.num1, tempObj.num2, tempObj.region, tempObj.primemember);
+    let cartobj = new Cart(tempObj.num1, tempObj.num2, tempObj.region, tempObj.primemember);
     
-    let val = Number(tempObj.num1) + Number(tempObj.num2) + 50 + classcreate.num1;
+    let val = Number(cartobj.num1) + Number(cartobj.num2) + 50 ;
 
     if(Boolean(tempObj.primemember)){
         val = val - 2;
