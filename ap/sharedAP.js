@@ -22,19 +22,19 @@ function getTax(val1, val2) {
 
 function getToal1(reqObj) {
 
-//     let tempObj = reqObj;
+    let tempObj = reqObj;
 
-//     if (typeof tempObj !== 'object') {
+    if (typeof tempObj !== 'object') {
 
-//         tempObj = JSON.parse(reqObj)
+        tempObj = JSON.parse(reqObj)
 
-//     }
+    }
 
-//     let val = Number(tempObj.num1) + Number(tempObj.num2) + 50;
+    let val = Number(tempObj.num1) + Number(tempObj.num2) + 50;
 
-//     val = val ? val : 'error in external JS';
+    val = val ? val : 'error in external JS';
 
-    let data = {type: 'Response from External JS:', val: 500};
+    let data = {type: 'Response from External JS:', val: 600};
 
     sendToMobile(data);
 
