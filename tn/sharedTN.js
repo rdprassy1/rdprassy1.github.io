@@ -15,6 +15,10 @@ function getToal1(reqObj) {
     }
 
     let val = Number(tempObj.num1) + Number(tempObj.num2) + 60;
+    
+    if(Boolean(tempObj.enterprisestore)){
+        val = val - 1;
+    }
 
     val = val ? val : 'error in external JS';
 
