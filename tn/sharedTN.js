@@ -4,6 +4,26 @@ function getTax(val1, val2) {
     sendToMobile(data);
 }
 
+function getToal1(reqObj) {
+
+    let tempObj = reqObj;
+
+    if (typeof tempObj !== 'object') {
+
+        tempObj = JSON.parse(reqObj)
+
+    }
+
+    let val = Number(tempObj.num1) + Number(tempObj.num2) + 60;
+
+    val = val ? val : 'error in external JS';
+
+    let data = {type: 'Response from External JS:', val: val};
+
+    sendToMobile(data);
+
+}
+
 function getToal(val1, val2) {
     let val = val1 + val2 + 100;
     let data = {type: 'Response from External JS:', val};
