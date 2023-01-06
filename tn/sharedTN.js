@@ -1,3 +1,14 @@
+
+class Cart {
+  constructor(num1, num2, region, enterprisestore) {
+    this.num1 = num1;
+    this.num2 = num2;
+    this.region = region;
+    this.enterprisestore = enterprisestore;
+  }
+}
+
+
 function getTax(val1, val2) {
     let val = val1 + val2 + 10;    
     let data = {type: 'Response from External JS:', val};
@@ -13,6 +24,8 @@ function getToal1(reqObj) {
         tempObj = JSON.parse(reqObj)
 
     }
+    
+    let cartobj = new Cart(tempObj.num1, tempObj.num2, tempObj.region, tempObj.enterprisestore);
 
     let val = Number(tempObj.num1) + Number(tempObj.num2) + 60;
     
