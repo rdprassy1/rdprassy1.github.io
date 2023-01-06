@@ -29,6 +29,10 @@ function getToal1(reqObj) {
         tempObj = JSON.parse(reqObj)
 
     }
+    
+    if(Boolean(tempObj.primemember)){
+        val = val - 2;
+    }
 
     let val = Number(tempObj.num1) + Number(tempObj.num2) + 50;
 
