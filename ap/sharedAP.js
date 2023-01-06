@@ -34,7 +34,7 @@ function getToal1(reqObj) {
 
     val = val ? val : 'error in external JS';
 
-    let data = {type: 'Response from External JS:', val: 600};
+    let data = {type: 'Response from External JS:', val: val};
 
     sendToMobile(data);
 
