@@ -42,7 +42,7 @@ function getToal1(reqObj) {
     
     let classcreate = new Car(tempObj.num1, tempObj.num2, tempObj.region, tempObj.primemember);
     
-    let val = Number(tempObj.num1) + Number(tempObj.num2) + 50;
+    let val = Number(tempObj.num1) + Number(tempObj.num2) + 50 + classcreate.num1;
 
     if(Boolean(tempObj.primemember)){
         val = val - 2;
