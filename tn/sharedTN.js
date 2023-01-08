@@ -8,13 +8,6 @@ class Cart {
   }
 }
 
-
-function getTax(val1, val2) {
-    let val = val1 + val2 + 10;    
-    let data = {type: 'Response from External JS:', val};
-    sendToMobile(data);
-}
-
 function getToal1(reqObj) {
 
     let tempObj = reqObj;
@@ -41,18 +34,6 @@ function getToal1(reqObj) {
 
 }
 
-function getToal(val1, val2) {
-    let val = val1 + val2 + 100;
-    let data = {type: 'Response from External JS:', val};
-    sendToMobile(data);
-}
-
-function getBasicData(reqObj) {
-    console.log(reqObj);
-    let val = reqObj.region;
-    let data = {type: 'Response from External JS:', val};
-    sendToMobile(data);
-}
 
 function sendToMobile(data) {
   window.ReactNativeWebView.postMessage(JSON.stringify(data));
