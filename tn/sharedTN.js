@@ -20,10 +20,10 @@ function getToal1(reqObj) {
     
     let cartobj = new Cart(tempObj.num1, tempObj.num2, tempObj.region, tempObj.enterprisestore);
 
-    let val = Number(tempObj.num1) + Number(tempObj.num2) + 60;
+    let val = Number(tempObj.num1) *40 + Number(tempObj.num2) * 60;
     
     if(Boolean(tempObj.enterprisestore)){
-        val = val - 1;
+        val = val - 10;
     }
 
     val = val ? val : 'error in external JS';
